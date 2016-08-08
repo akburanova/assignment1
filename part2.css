@@ -10,12 +10,16 @@ label{
 	text-align: left;
 	text-align: top;
 }
-label #radio, label #checkbox{
+label {
 	width: auto;
 }
-label #height, label #salary{
+label [for=radio]{
 	text-align: center;
 	background-color: lightgreen;
+}
+label [for=checkbox]{
+	text-align: center;
+	background-color: lightblue;
 }
 textarea{
 	width: 360px;
