@@ -9,27 +9,27 @@
 <fieldset>
 	<legend>Your Face</legend>
 	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
-	<label for="img">Your image:</label>
+	<label for="img" class="title">Your image:</label>
 			<input type="file" name="img"><br>
-	<label for="preview">Image preview:</label>
+	<label for="preview" class="title">Image preview:</label>
 	<img src="" id="preview"/>
 	</form>
 </fieldset>
 <fieldset>
 	<legend>Your General Details</legend>
 	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
-	<label for="name">Name:</label>
+	<label for="name" class="title">Name:</label>
 		<input type="text" name="name" placeholder="Your full name"><br>
-	<label for="gender">Gender:</label>
-		<input type="radio" name="gender" value="Male" required>Male
-		<input type="radio" name="gender" value="Female" required>Female<br>
-	<label for="age">Age:</label>
+	<label for="gender" class="title" id="radio">Gender:</label>
+		<input type="radio" name="gender" required>Male
+		<input type="radio" name="gender" required>Female<br>
+	<label for="age" class="title">Age:</label>
 		<input type="number" name="age" required><br>
-	<label for="date">Date of birth</label>
+	<label for="date" class="title">Date of birth</label>
 		<input type="date" name="date"><br>
-	<label for="favcolor">Favourite color:</label>
-		<input type="color" name="favcolor" ><br>
-	<label for="country">Which country:</label>
+	<label for="favcolor" class="title">Favourite color:</label>
+		<input type="color"	id="favcolor" name="favcolor" ><br>
+	<label for="country" class="title">Which country:</label>
 		<select name="country">
 			<option value="None selected">Please select below</option>
     		<option value="Afghanistan">Afghanistan</option>
@@ -44,9 +44,9 @@
 <fieldset>
 		<legend>Your indicators</legend>
 		<form>
-		<label for="height">Height:</label>
+		<label for="height" class="title">Height:</label>
 			Short<input type="range" name="height" min="90" max="200">Tall<br>
-		<label for="salary">Salary:</label>
+		<label for="salary" class="title">Salary:</label>
 			Poor<input type="range" name="salary" min="300" max="10000">Rich
 		</form>
 </fieldset>
@@ -54,13 +54,13 @@
 <fieldset>
 	<legend>Your contact information</legend>
 	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
-	<label for="email">Email:</label>
+	<label for="email" class="title">Email:</label>
 	<input type="email" name="email"><br>
-	<label for="telephone">Mobile:</label>
+	<label for="telephone" class="title">Mobile:</label>
 	<input type="tel" name="telephone"><br>
-	<label for="address">Address:</label>
+	<label for="address" class="title">Address:</label>
 	<textarea name="address" rows="3" maxlength="100" cols="30"></textarea><br>
-	<label for="method">Method to contact you:</label>
+	<label for="method" class="title" id="checkbox">Method to contact you:</label>
 	<input type="checkbox" name="method">Email
 	<input type="checkbox" name="method">WhatsApp
 	<input type="checkbox" name="method">In-app chat
