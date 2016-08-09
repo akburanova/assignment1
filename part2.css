@@ -4,22 +4,17 @@ fieldset{
 	margin-bottom: 10px;
 	width: 720px;
 }
-label{
+.title{
 	width: 180px;
 	display: inline-block;
-	text-align: left;
+	text-align: right;
 	text-align: top;
 }
-label {
+.radio, .checkbox{
 	width: auto;
-}
-label [for=radio]{
-	text-align: center;
-	background-color: lightgreen;
-}
-label [for=checkbox]{
-	text-align: center;
-	background-color: lightblue;
+	display: inline-block;
+	text-align: right;
+	text-align: top;
 }
 textarea{
 	width: 360px;
